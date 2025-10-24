@@ -651,7 +651,7 @@ Campus360/
 - 🌐 Website: [mrgovind.netlify.app](http://mrgovind.netlify.app/)
 - 💼 LinkedIn: [linkedin.com/in/m-govind-mukhiya-453a59302](https://www.linkedin.com/in/m-govind-mukhiya-453a59302/)
 - 📧 Email: [govindmukhiya9963@gmail.com](mailto:govindmukhiya9963@gmail.com)
-- 🐙 GitHub: [github.com/krish-7104](https://github.com/krish-7104)
+  
 
 ### Support
 
@@ -662,12 +662,7 @@ For questions, issues, or feature requests:
 3. **Open Issue** - Create detailed bug report or feature request
 4. **Contact Developer** - Email for urgent matters
 
-### Project Links
 
-- **Repository:** [github.com/krish-7104/College-Management-System](https://github.com/krish-7104/College-Management-System)
-- **Issues:** [github.com/krish-7104/College-Management-System/issues](https://github.com/krish-7104/College-Management-System/issues)
-
----
 
 ## 🤝 Contributing
 
