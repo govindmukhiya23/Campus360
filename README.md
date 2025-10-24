@@ -691,6 +691,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 Made with ❤️ for the education community
 
 **Campus360** - Complete College Management System  
-Version 2.0 | 2024
+Version 2.0 | 2025
 
 </div>
