@@ -12,7 +12,8 @@ const studentDetailsSchema = new mongoose.Schema(
     },
     middleName: {
       type: String,
-      required: true,
+      required: false,
+      default: "",
     },
     lastName: {
       type: String,

@@ -1,7 +1,7 @@
 {
-  "name": "cms-backend",
+  "name": "campus360-backend",
   "version": "1.0.0",
-  "description": "MERN Stack College Management System",
+  "description": "Campus360 - Complete College Management System",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

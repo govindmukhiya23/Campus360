@@ -34,8 +34,14 @@ const loginStudentController = async (req, res) => {
 
 const getAllDetailsController = async (req, res) => {
   try {
+    const { branchId, semester } = req.query;
+    let query = {};
+    
+    if (branchId) query.branchId = branchId;
+    if (semester) query.semester = parseInt(semester);
+    
     const users = await studentDetails
-      .find()
+      .find(query)
       .select("-__v -password")
       .populate("branchId");
 
@@ -52,13 +58,19 @@ const getAllDetailsController = async (req, res) => {
 
 const registerStudentController = async (req, res) => {
   try {
-    const profile = req.file.filename;
+    const profile = req.file ? req.file.filename : `default_profile.jpg`;
 
     const enrollmentNo = Math.floor(100000 + Math.random() * 900000);
     const email = `${enrollmentNo}@gmail.com`;
 
+    // Clean up empty middleName
+    const studentData = { ...req.body };
+    if (studentData.middleName === '') {
+      delete studentData.middleName;
+    }
+
     const user = await studentDetails.create({
-      ...req.body,
+      ...studentData,
       profile,
       password: "student123",
       email,

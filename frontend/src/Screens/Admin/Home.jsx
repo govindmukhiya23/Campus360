@@ -12,6 +12,8 @@ import { setUserData } from "../../redux/actions";
 import axiosWrapper from "../../utils/AxiosWrapper";
 import Profile from "./Profile";
 import Exam from "../Exam";
+import FeedbackManagement from "./FeedbackManagement";
+import FeedbackFormManagement from "./FeedbackFormManagement";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const MENU_ITEMS = [
@@ -23,6 +25,8 @@ const MENU_ITEMS = [
   { id: "exam", label: "Exam", component: Exam },
   { id: "subjects", label: "Subjects", component: Subjects },
   { id: "admin", label: "Admin", component: Admin },
+  { id: "feedback-forms", label: "Feedback Forms", component: FeedbackFormManagement },
+  { id: "feedback", label: "View Feedback", component: FeedbackManagement },
 ];
 
 const Home = () => {
